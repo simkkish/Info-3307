@@ -1,0 +1,74 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Process Specification</title>
+    <link href="../Style/StyleSheet.css" rel="stylesheet" />
+    <link href="../Style/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+	
+	<div class="sidenav">
+            <label id="lblSideBar">Contents</label>
+			<a href="../index.html">Home</a>
+            <a href="ExecutiveSummary.html">Executive Summary </a>
+            <a href="introduction.html">Introduction</a>
+            <a href="FunctionalDecomposition.html">Funcational Analysis</a>
+            <a href="SystemDescription.html">System Description</a>
+            <a href="conclusion.html">Conclusion</a>
+ 		</div>
+	
+        <h2 id="project"><i>Wind Riders of the lost River Range</i></h2>
+		
+		<p><u><b>Structured English</b></u></p>
+		
+		<ol>
+				<li  class="font-weight-bold">&nbsp;1.1 Generate Purchase Agreement and Compare Payment</br> <span style="margin-left: 3em">Case: Generate Salesperson Report </span></li>
+				<span style="margin-left: 3em">Get the payment method from the customer (1.1) as input.</span> <br>
+				<span style="margin-left: 3em">If( payment method == Cash Collect payment), return the difference of cost price and payment to customer and generate the receipt.</span><br>
+				<span style="margin-left: 3em">Else, Collect payment and generate &amp; return the receipt to customer</span>
+				</br></br>
+				<li  class="font-weight-bold">&nbsp;1.1.1 Customer verification</br> 
+				<span style="margin-left: 3em">Case: Customer Verification</span></li>
+				<span style="margin-left: 3em">Get details of customers and check the information</span> <br>
+				<span style="margin-left: 3em">If they are already in the system, Update that the information is verified </span><br>
+				<span style="margin-left: 3em">Else, Create the new customer. </span>
+				</br></br>
+				<li  class="font-weight-bold">&nbsp;1.1.4 Process Payment</br> 
+				<span style="margin-left: 3em">Case: Process Payment</span></li>
+				<span style="margin-left: 3em">Check if they made a payment or not</span> <br>
+				<span style="margin-left: 3em">If you receive the payment from customer. send the payment record to inventory file and provide the receipt to customer </span><br>
+				<span style="margin-left: 3em">Else, Ask for payment again </span>
+				</br></br>
+				<li  class="font-weight-bold">&nbsp;1.2 Customer Returns Defective/Unwanted Equipment</br> 
+				<span style="margin-left: 3em">Case: Customer Returns Defective/ Unwanted Equipment</span></li>
+				<span style="margin-left: 3em">Get the reason for returning the item.</span> <br>
+				<span style="margin-left: 3em">If the Customer is returning product because it is defective, Update the inventory file and send request for maintenance</span><br>
+				<span style="margin-left: 3em">Else, Update the inventory file and stock the product</span>
+				</br></br>
+				<li  class="font-weight-bold">&nbsp;2.1 Process Returned Inventory</br> 
+				<span style="margin-left: 3em">Case: Process Returned Inventory</span></li>
+				<span style="margin-left: 3em">Get the list of returned items from 1.2 as input.</span> <br>
+				<span style="margin-left: 3em">If the item is defective, send it to Suppliers.</span><br>
+				<span style="margin-left: 3em">Else, Send it to inventory file. </span>
+				</br></br>
+				<li  class="font-weight-bold">&nbsp;2.2 Check for Ordering new Inventory</br> 
+				<span style="margin-left: 3em">Case: Check for Ordering new Inventory</span></li>
+				<span style="margin-left: 3em">Get the current inventory records as of input from the inventory file.</span> <br>
+				<span style="margin-left: 3em">If (an item quantity &get; Minimum quantity to be present in stock), Order quantity needed to make the item quantity at optimum level</span><br>
+				<span style="margin-left: 3em">Else, Do not order the item. </span>
+				</br></br>
+				<li  class="font-weight-bold">&nbsp;3.1 Generate Salesperson Report </br> 
+				<span style="margin-left: 3em">Case: Generate Salesperson Report </span></li>
+				<span style="margin-left: 3em">Retrieve the monthly sales report from Sales report file, Separate the salesperson information from the sold items report</span> <br>
+				<span style="margin-left: 3em">Generate the monthly sales report for each salesperson, Update the salesperson information in employee file</span><br>
+				<span style="margin-left: 3em">Give salesperson the monthly report with the information of total items sold in the month. </span>
+				</br></br>
+				<li  class="font-weight-bold">&nbsp;3.4 Generate Current Inventory Report </br> 
+				<span style="margin-left: 3em">Case: Generate current inventory report</span></li>
+				<span style="margin-left: 3em">Get the record details from inventory file.</span> <br>
+				<span style="margin-left: 3em">If the record is valid, send it to the record file.</span><br>
+				<span style="margin-left: 3em">Else, Ask for the valid record. </span>
+		</ol>
+</body>
+</html>
