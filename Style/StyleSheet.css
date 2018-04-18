@@ -1,0 +1,77 @@
+﻿.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #006400;
+    overflow-x: hidden;
+    padding-top: 20px;
+    text-align: left;
+    margin: auto;
+    padding: 6px 8px 6px 16px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #000000;
+    display: block;
+}
+
+    .sidenav a:hover {
+        color: #00f;
+    }
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 12px;
+        }
+}
+
+#lblSideBar {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 3px 2px green;
+}
+
+#intro-Image {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul li{
+    list-style: none;
+    font-style:italic;
+    font-size:20px;
+}
+ul{
+    vertical-align:central;
+    text-align:center;
+}
+h1 {
+    vertical-align: central;
+    text-align: center;
+    font-weight:bold;
+    font:18px #006400;
+    text-decoration:underline;
+}
+.img2 {
+    float: right;
+}
+.clearfix {
+    overflow: auto;
+}
+#project {
+    color: rgb(0,0,255);
+}
