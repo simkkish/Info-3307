@@ -72,8 +72,9 @@ h1 {
     overflow: auto;
 }
 #project {
-    color: rgb(0,0,255);
-	text-align: center;
+    color:chocolate;
+    text-align: center;
+    text-shadow: 0 1px 0 black;
 }
 
 .intro_header{
@@ -90,4 +91,14 @@ li {
 ol li:before {
   content: counters(item, ".") " ";
   counter-increment: item
+}
+body {
+    background-color:darkseagreen !important;
+}
+a{
+    color:blue;
+}
+h4{
+    color:darkgreen !important;
+    font:16px !important;
 }
